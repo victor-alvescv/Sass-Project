@@ -279,7 +279,7 @@ nav {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
     .aboutus--title {
       color: white;
       font-weight: 300;
@@ -307,5 +307,110 @@ nav {
 }
 
 .ourservices {
-  background-color: $third-color;
+  background-color: #11151b;
+  .ourservices--wrapper {
+    max-width: 1110px;
+    margin: 0 auto;
+    padding: 90px 0px;
+
+    .services--box-wrapper {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      gap: 25px;
+      padding-top: 50px;
+    }
+
+    .box--wrapper {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      padding: 24px;
+      max-width: 356px;
+      border-radius: 5px;
+      border: 1px solid #3f4347;
+      transition: all 400ms ease-in-out;
+
+     &:hover {
+      transform: scale(1.02);
+      border-color: transparent;
+      box-shadow: 0px 0px 8px #3f4347;
+     }
+
+     &:hover > .box--title {
+      color: #005bea;
+     }
+
+     &:hover > .box--icon svg {
+      color: white;
+      background-color: #005bea;
+      box-shadow: 0 0 0 5px #0e6aff33;
+     }
+
+      .box--title {
+        font-size: 20px;
+        color: white;
+        transition: all 400ms ease-in-out;
+        margin: 10px 0px 12px 0px;
+      }
+      .box--subtitle {
+        color: $paragraph-color;
+        line-height: 2;
+        font-size: 14px;
+        max-width: 300px;
+        margin-bottom: 20px;
+      }
+
+      .box--under-text {
+        color: #005bea;
+        font-size: 13px;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        svg {
+          width: 15px;
+        }
+      }
+      .box--icon {
+        svg {
+          width: 65px;
+          background-color: rgba(0, 91, 234, 0.08);
+          color: #005bea;
+          padding: 20px;
+          border-radius: 50px;
+          transition: all 300ms ease-in-out;
+        }
+      }
+    }
+
+    .ourservices--title-wrapper {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      gap: 15px;
+      .sub--line--wrapper {
+        display: flex;
+        align-items: center;
+        .sub--line {
+          width: 80px;
+          height: 2px;
+          background-color: #005bea;
+          position: relative;
+        }
+        .sub--line-detail {
+          background-color: $secondary-color;
+          height: 6px;
+          width: 30px;
+          border-radius: 50px;
+          left: 0;
+          top: 0%;
+        }
+      }
+      .ourservices--title {
+        color: white;
+        font-size: 28px;
+        font-weight: 300;
+      }
+    }
+  }
 }
