@@ -149,7 +149,6 @@ nav {
 }
 
 .aboutus {
-  height: 100vh;
   background-color: $third-color;
   width: 100%;
   background-image: url("/assets/bg-light-about.png");
@@ -160,6 +159,7 @@ nav {
   max-width: 1110px;
   margin: 0 auto;
   padding-top: 90px;
+  padding-bottom: 90px;
   .aboutus--text-wrapper {
     display: flex;
     align-items: center;
@@ -173,6 +173,29 @@ nav {
     }
     .aboutus--text {
       width: 55%;
+
+      .aboutus--under-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        .aboutus--under-text {
+          color: #fff;
+          cursor: pointer;
+        }
+
+        .aboutus--under-bullet {
+          background-color: $secondary-color;
+          width: 6px;
+          height: 6px;
+          border-radius: 50px;
+        }
+
+        span {
+          color: $secondary-color;
+          margin-left: 10px;
+        }
+      }
+
       .aboutus--text-title {
         color: white;
         font-size: 28px;
@@ -184,7 +207,7 @@ nav {
         color: $paragraph-color;
         line-height: 2;
         font-size: 15px;
-        margin-top: 20px;
+        margin: 20px 0px;
       }
     }
   }
@@ -201,33 +224,32 @@ nav {
       justify-content: center;
       flex-direction: column;
 
+      &:hover > .lightbulb {
+        background-color: #0e6cff;
+        box-shadow: 0 0 0 5px #0e6aff33;
+        border-color: transparent;
+      }
+
+      &:hover > .labs {
+        background-color: #0e6cff;
+        box-shadow: 0 0 0 5px #0e6aff33;
+        border-color: transparent;
+      }
+
+      &:hover > .trophy {
+        background-color: #0e6cff;
+        box-shadow: 0 0 0 5px #0e6aff33;
+        border-color: transparent;
+      }
+
       .lightbulb {
-        transition: all 300ms ease;
-
-        &:hover {
-          background-color: #0e6cff;
-          box-shadow: 0px 0px 30px #0e6aff60;
-          border-color: transparent;
-        }
+        transition: all 500ms ease;
       }
-
       .labs {
-        transition: all 300ms ease;
-
-        &:hover {
-          background-color: #0e6cff;
-          box-shadow: 0px 0px 30px #0e6aff60;
-          border-color: transparent;
-        }
+        transition: all 500ms ease;
       }
-
       .trophy {
-        transition: all 300ms ease;
-        &:hover {
-          background-color: #0e6cff;
-          box-shadow: 0px 0px 30px #0e6aff60;
-          border-color: transparent;
-        }
+        transition: all 500ms ease;
       }
 
       .about__container--title {
@@ -282,4 +304,8 @@ nav {
       }
     }
   }
+}
+
+.ourservices {
+  background-color: $third-color;
 }
