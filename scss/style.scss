@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+$primary-color: #0e6cff;
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik";
+  box-sizing: border-box;
+}
+
+.top--header--wrapper {
+  height: 120vh;
+  background-color: $primary-color;
+  width: 100%;
+  background-image: url("../assets/home-2-bg.png");
+  background-position: center center;
+  background-size: cover;
+
+  .top--header {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding-top: 35px;
+
+    .main--wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        .text-left {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+          .text-left--title {
+            font-size: 56px;
+            color: #fff;
+          }
+    
+          .text-left--subtitle {
+            color: #ffffffcc;
+            font-size: 15px;
+            max-width: 400px;
+            line-height: 1.6;
+          }
+
+          .img-right {
+            width: 200px;
+          }
+        }
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      img {
+        height: 20px;
+      }
+
+      ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 32px;
+        list-style-type: none;
+
+        li {
+          color: #ffffff99;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
