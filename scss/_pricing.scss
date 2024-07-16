@@ -1,0 +1,106 @@
+.ourpricing--content-wrapper {
+  background-color: #11151b;
+  background: linear-gradient(#161c24, #121b29);
+
+  .ourpricing--wrapper {
+    padding: 90px 0px;
+    max-width: 1110px;
+    margin: 0 auto;
+
+    .ourpricing--box-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 25px;
+      padding-top: 50px;
+      .ourpricing--box {
+        border: 1px solid #3f4347;
+        color: white;
+        width: 261px;
+        height: 415px;
+        transition: all 300ms ease-in-out;
+
+        .ourpricing--top-text {
+          display: flex;
+          transition: all 300ms ease-in-out;
+          align-items: center;
+          justify-content: space-between;
+          padding: 24px;
+          position: relative;
+          border-bottom: solid 1px #3f4347;
+
+          .plans {
+            font-size: 18px;
+          }
+
+          .price {
+            font-size: 32px;
+
+            span {
+              font-size: 18px;
+            }
+          }
+
+          .pricing--detail {
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            bottom: -12%;
+            right: 45%;
+            transform: rotate(45deg);
+            background-color: #141b26;
+            border-bottom: 1px solid #3f4347;
+            border-right: 1px solid #3f4347;
+            transition: all 300ms ease-in-out;
+          }
+
+          &:hover {
+            transform: scale(1.03);
+            border-color: transparent;
+            box-shadow: rgb(209 194 194 / 10%) 0px 0px 10px 1px;
+          }
+
+          &:hover .ourpricing--top-text {
+            background-color: #005bea;
+            border-color: transparent;
+          }
+
+          &:hover .pricing--detail {
+            background-color: #005bea;
+            border-color: transparent;
+          }
+        }
+      }
+
+      .ourpricing--text {
+        color: rgba(173, 181, 189, 0.7490196078);
+        font-size: 14px;
+        font-weight: 400;
+        padding: 24px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 25px;
+        margin-top: 20px;
+
+        .ourpricing--button {
+          background-color: transparent;
+          color: #005bea;
+          border: 1px solid #005bea;
+          padding: 12px 30px;
+          font-size: 12px;
+          width: 58%;
+          border-radius: 4px;
+          font-weight: 500;
+          cursor: pointer;
+          transition: all 300ms ease;
+
+          &:hover {
+            background-color: #005bea;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}
