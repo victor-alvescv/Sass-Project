@@ -1,9 +1,37 @@
-// each section title ->
+.base--wrapper {
+  max-width: 1110px;
+  margin: 0 auto;
+  padding: 90px 0px;
+}
 
-.section--title-wrapper {
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex--column {
   display: flex;
   justify-content: center;
   flex-direction: column;
+}
+
+.flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.paragraph--preset {
+  color: $paragraph-color;
+  line-height: 2;
+  font-size: 14px;
+}
+
+// each section title ->
+
+.section--title-wrapper {
+  @extend .flex--column;
   gap: 15px;
   .section--title {
     color: white;
@@ -17,7 +45,7 @@
     .sub--line {
       width: 80px;
       height: 2px;
-      background-color: #005bea;
+      background-color: $secondary-blue-color;
       position: relative;
     }
     .sub--line-detail {
@@ -34,14 +62,12 @@
 // blue ball for section features and services ->
 
 .blue--circle-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @extend .flex;
   width: 50%;
   .blue--circle {
     width: 350px;
     height: 350px;
-    background-color: #005bea;
+    background-color: $secondary-blue-color;
     border-radius: 50%;
     display: flex;
     align-items: center;

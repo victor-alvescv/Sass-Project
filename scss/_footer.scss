@@ -1,8 +1,6 @@
 .footer {
-    background-color: #161c24;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background-color: $third-color;
+    @extend .flex;
     padding: 20px;
     color: rgba(255, 255, 255, .6);
     font-weight: 300;

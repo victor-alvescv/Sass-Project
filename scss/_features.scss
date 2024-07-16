@@ -1,14 +1,10 @@
 // features first version ->
 .ourfeatures--content-wrapper {
-  background-color: #161c24;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  background-color: $third-color;
+  @extend .flex-between;
   gap: 20px;
   .ourfeatures--wrapper {
-    max-width: 1110px;
-    margin: 0 auto;
-    padding: 90px 0px;
+    @extend .base--wrapper;
   }
 
   .ourfeatures--content {
@@ -16,7 +12,7 @@
     width: 50%;
     svg {
       width: 40px;
-      color: #005bea;
+      color: $secondary-blue-color;
       margin-top: 30px;
       margin-bottom: 20px;
     }
@@ -29,9 +25,7 @@
     }
 
     .ourfeatures--subtitle {
-      color: $paragraph-color;
-      line-height: 2;
-      font-size: 14px;
+      @extend .paragraph--preset;
     }
 
     .ourfeatures--bottom-wrapper {
@@ -40,7 +34,7 @@
       gap: 5px;
       margin-top: 20px;
       .ourfeatures--bottom {
-        color: #005bea;
+        color: $secondary-blue-color;
         font-size: 13px;
         cursor: pointer;
       }
@@ -56,14 +50,12 @@
 // features second version ->
 
 .ourfeatures--content-2 {
-  background-color: #11151b;
+  background-color: $background-section1;
 
   .ourfeatures--wrapper-2 {
     padding: 105px 0px;
     max-width: 1110px;
     margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @extend .flex-between;
   }
 }

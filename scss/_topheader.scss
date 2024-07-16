@@ -12,16 +12,12 @@
     padding-top: 35px;
 
     .main--wrapper {
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      @extend .flex;
       width: 100%;
       padding: 180px 0px;
 
       .text-left {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
+        @extend .flex--column;
         width: 42%;
         .text-left--title {
           font-size: 56px;

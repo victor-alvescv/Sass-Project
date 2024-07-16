@@ -1,6 +1,6 @@
 .summary--wrapper {
   padding: 90px 0px;
-  background-color: #11151b;
+  background-color: $background-section1;
   background-image: url("/assets/footer-bg.png");
   background-position: center;
   background-size: cover;
@@ -8,17 +8,13 @@
   .summary--content-wrapper {
     max-width: 1000px;
     margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @extend .flex;
     gap: 25px;
 
     .summary--line-wrapper {
       color: white;
       max-width: 400px;
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
+      @extend .flex--column;
       gap: 10px;
 
       .summary--title {
@@ -26,7 +22,7 @@
       }
 
       .summary--subtitle {
-        color: rgba(173, 181, 189, 0.7490196078);
+        color: $paragraph-color;
         font-size: 14px;
         line-height: 2;
         max-width: 350px;
